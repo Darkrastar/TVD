@@ -1,0 +1,147 @@
+body, html{
+    height: 100%;
+}
+.white-text{
+    color: white;
+}
+.bg1 {
+    /* The image used */
+    background-image: url("bg_inicio.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg2 {
+    /* The image used */
+    background-image: url("bg_inicio.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.row .o-btn-container{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+.o-video-container{
+    margin-top: 4em;
+}
+
+.show{
+    display: flex;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    transform: translateY(-8em);
+}
+
+.hide{
+    display: none;
+}
+
+.full-page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+#user-field{
+
+}
+#socialmedia{
+    padding-bottom: 3em;
+}
+
+.row .col .sidebar ul{
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0em;
+}
+
+.row .col .sidebar ul li{
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.row .col .sidebar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.row .col .sidebar ul li a:hover{
+    color: cyan;
+    background-color: #1e1e1e;
+    border-left-color: cyan;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    left: -250px;
+    background-color: #1b1b1b;
+    z-index: 1;
+    transition: left 0.4s ease;
+}
+.sidebar.expand{
+    left: 0px;
+}
+
+.sidebar .text{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+}
+
+.o-btn-bars{
+    position: absolute;
+    background-color: #1b1b1b;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+.o-btn-bars.click{
+    left: 260px;
+}
+.o-btn-bars span{
+    color: white;  
+    font-size: 28px;
+    line-height: 45px;
+}
+
+.o-btn-bars.click span:before{
+    content:  '\f00d';
+}
+
+#twitter{
+
+    color: #00acee;
+    font-size: 36px;
+    bottom: 10px;
+    padding: 1em;
+    cursor: pointer;
+}
